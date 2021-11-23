@@ -4,11 +4,11 @@ Scripts for generating TLS certificates and related files such as keystore and t
 
 `generate-signing-request.sh` allows you to generate a certificate signing request(CSR) for hosts/nodes enclosed in the node-list.txt. The CSR file can then be submitted to your Certificate Authority for singning your certificates.
 
-generate-signing-request.sh <node list file>
+generate-signing-request.sh '<node list file>'
 
 When you want to use self signed certificates, us the shell script `generate-self-signed-certs.sh`. Before you can use this script make sure input is provided for each node in the ./cfg/<Host FQDN Name>.cfg file.
 
-generate-self-signed-certs.sh <node list file> <keystore password> <truststore password>
+generate-self-signed-certs.sh '<node list file>' '<keystore password>' '<truststore password>'
 
 Here's the use of each folder:
 
