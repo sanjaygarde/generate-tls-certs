@@ -13,6 +13,7 @@ generate-self-signed-certs.sh '\<node list file\>' '\<keystore password\>' '\<tr
 Here's the use of each folder:
 
 pvt_keys: Private key for each host is saved here using the naming convention, \<Host FQDN Name\>.key. The CA key uses the name ca.key.
+
 csr: The generated certificate signing request files are saved here using the naming convention, \<Host FQDN Name\>.csr
 
 certs: Certificates for each host are saved here with the extension name .crt.
