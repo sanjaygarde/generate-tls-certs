@@ -8,7 +8,7 @@ Scripts for generating TLS certificates and related files such as keystore and t
 
 When you want to use self signed certificates, us the shell script `generate-self-signed-certs.sh`. Before you can use this script make sure input is provided for each node in the ./cfg/<Host FQDN Name>.cfg file.
 
-generate-self-signed-certs.sh `'\<node list file\>' '\<keystore password\>' '\<truststore password\>'`
+`generate-self-signed-certs.sh '\<node list file\>' '\<keystore password\>' '\<truststore password\>'`
 
 Here's the use of each folder:
 
