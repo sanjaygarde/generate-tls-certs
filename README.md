@@ -29,7 +29,7 @@ Many a times your CA will provide you with a .p7b(pkcs7 format) file. The script
 ## Converting the .crt & .key files to .pem
 Use the `generate-pem-files.sh` script for this. The script will grab .crt & .key files from the certs & pvt_keys directories respectively based on the host names supplied in the node-list file.
 
-`generate-self-signed-certs.sh <node list file> <ca cert file name>`
+`generate-pem-files.sh <node list file> <ca cert file name>`
 
 
 
