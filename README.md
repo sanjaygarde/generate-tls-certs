@@ -6,7 +6,7 @@ Scripts for generating TLS certificates and related files such as keystore and t
 
 `generate-signing-request.sh <node list file>`
 
-When you want to use self signed certificates, us the shell script `generate-self-signed-certs.sh`. Before you can use this script make sure input is provided for each node in the ./cfg/<Host FQDN Name>.cfg file.
+When you want to use self signed certificates, us the shell script `generate-self-signed-certs.sh`. Before you can use this script make sure input is provided for each node in the ./cfg/\<Host FQDN Name\>.cfg file.
 
 `generate-self-signed-certs.sh <node list file> <keystore password> <truststore password>`
 
@@ -25,6 +25,12 @@ truststore: The truststore file goes here; it is named truststore.pkcs12
 cfg: For each host that requires a cetificate, input needs to be provided in the ./cfg/\<Host FQDN Name\>.cfg file.
 
 Many a times your CA will provide you with a .p7b(pkcs7 format) file. The script `convert-signed-pem-to-pkcs12.sh` allows you to convert from the pksc7(.p7b) format to .pem(base64 format). Once the signed certs are in the pkcs7 format you can use the script `convert-signed-pem-to-pkcs12.sh` to convert that to pkcs12 format.
+
+## Converting the .crt & .key files to .pem
+Use the `generate-pem-files.sh` script for this. The script will grab .crt & .key files from the certs & pvt_keys directories respectively based on the host names supplied in the node-list file.
+
+`generate-self-signed-certs.sh <node list file> <ca cert file name>`
+
 
 
 
