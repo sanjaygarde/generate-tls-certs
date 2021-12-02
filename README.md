@@ -1,7 +1,7 @@
 # generate-tls-certs
+Scripts for generating TLS certificates and related files such as keystore and truststore.
 
 ## Generating Certificate Signing Requests
-Scripts for generating TLS certificates and related files such as keystore and truststore.
 
 `generate-signing-request.sh` allows you to generate a certificate signing request(CSR) for hosts/nodes enclosed in the node-list.txt. The CSR file can then be submitted to your Certificate Authority for signing your certificates.
 
